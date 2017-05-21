@@ -1,0 +1,125 @@
+<!doctype <!DOCTYPE html>
+<html>
+    <head>
+            <style>
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b30000;
+}
+
+    li {
+        float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body background="https://scontent.xx.fbcdn.net/v/t34.0-12/18624882_296254760827013_2038064946_n.png?oh=566c9936e228adcf39d5eeeeb974eccf&oe=59232C45">
+ 
+        <ul>
+  <li><a href="file:///Users/Ojas/Downloads/workspace/index.html">Home</a></li>
+  <li><a href="hfile:///Users/Ojas/Downloads/Nomad%20_%20Zappos%20Shoes%20Detection.htm">Cuisines</a></li>
+  <li><a href="#contact">Steps<div id="contact"></div></a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+       	<div class="vertical-align container" style="color: #eee">
+			<div class="col-md-6">
+				<!--<h2 style="font-weight: 100; margin-bottom: 50px">Test our API on your own images</h2>
+				<h4 style="font-weight: 100; margin-bottom: 50px; line-height: 1.5">We trained 37 shoe classes in 3 hours from scraping Zappos. We were able to generate 40 images from each picture of the shoe given for maximum accuracy. Accuracy unmeasured.</h4>-->
+				<form method="POST" action="http://54.208.17.147/zappos/detect_idk" id="form" enctype="multipart/form-data">
+					<div class="fileUpload btn-blue">
+					    <span>Upload</span>
+					    <input type="file" id="file" class="upload" name="file">
+					</div>
+				</form>
+			</div>
+			<!--<div class="col-md-6">
+				<pre style="height: 300px"><code id="response">Upload a file to test!</code></pre>
+			</div>
+		</div>-->
+	</div>
+	<script src="./Nomad _ Zappos Shoes Detection_files/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		document.getElementById("file").onchange = function(){
+    		$('#form')[0].submit(function(e){
+    			e.preventDefault();
+				$.ajax({
+					url: '/zappos/detect',
+					type: 'POST',
+					data: new FormData(this),
+					processData: false,
+					contentType: false, 
+					success: function(data){
+						$('#response').text(data)
+					}
+				});
+			})
+		}
+	</script>
+        <h1>Allerg.io</h1>
+        <b><h2><p>Preventing Allergic Reactions Since 2017</p></b></h2>
+        <img src="https://scontent.xx.fbcdn.net/v/t34.0-12/18624882_296254760827013_2038064946_n.png?oh=566c9936e228adcf39d5eeeeb974eccf&oe=59232C45">
+        <b><p>Allerg.io is a fun, intuitive app with a user-friendly interface for people with allergies</p></b>
+        <b><p>Did you know that 15 million Americans suffer from some sort of food allergy. Our app solves this troublesome problem with only a few simple steps. Take a picture of the food you are unsure about to see if it contains anything which may be harmful to you, then, our app will let you know what ingredients make up the  food. You can also manually select what cusine you would prefer and select your allergies. The result will be a delicious meal which will not contain any foods to provoke your allergie</p></b>
+	
+		<a href></>at
+		
+		<img src="https://i.kinja-img.com/gawker-media/image/upload/s--hhP_IVmY--/c_scale,f_auto,fl_progressive,q_80,w_800/wojsrqpmxrfhjajjzaz6.gif"  height="200">		
+		<ul>
+			<li><p style="color:white">Cuisines</p>
+				<ul>
+					<li style="font-family:Futura">Mexican</li>
+					<p><li style="font-family:Futura">Indian</li></p>
+				<p><li style="font-family:Futura">American</li></li></p>
+				</ul>
+            </li>
+			<li><p style="color:white">Steps:</p></p>
+				<ol>
+					<li style="font-family:Futura">Select your allergies</li>
+					<p><li style="font-family:Futura">Choose your cuisine</li></p>
+				</ol>
+            </li>
+			<li><p style="color:white">Contributors</p>
+				<ol>
+					<li style="font-family:Futura">Bill Xiang</li>
+					<p><li style="font-family:Futura"> Aditya Sharma</li></p>
+					<p><li style="font-family:Futura">Nikhail</li></p>
+					<p><li style="font-size:18px; font-family:Futura">Aayush</li></p>
+					<p><li style="font-family:Futura">Ojas Mor</li></p>
+				</ol>
+            </li>
+			<li><p style="color:white">Favorite Quotes</p>
+				<ul>
+					<li style="font-family:Futura">"If at first you don't succeed, climb a giant building."</li>
+					<li style="font-family:Futura">"A banana in the hand is worth two on the tree."</li>
+				</ul>
+            </li>
+		</ul>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
